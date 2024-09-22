@@ -1,0 +1,51 @@
+.quiz {
+  padding: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the options */
+  margin: 20px 0;
+}
+
+.option {
+  width: 50%; /* Decrease the width */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #4a90e2;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Center the text inside */
+}
+
+.option:hover {
+  background-color: #f0f8ff;
+}
+
+.selected {
+  background-color: #4a90e2;
+  color: white;
+}
+
+/* Navigation buttons styling */
+.navigation button {
+  background-color: #4a90e2; /* Set background color */
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.navigation button:hover {
+  background-color: #357ABD; /* Darker shade on hover */
+}
+
+.navigation button:disabled {
+  background-color: #A9CCE3; /* Lighter shade for disabled buttons */
+  cursor: not-allowed;
+}
