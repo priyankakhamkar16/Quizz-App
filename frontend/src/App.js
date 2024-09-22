@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import './styles.css';
 
 // Create a Socket.IO connection
-const socket = io('http://localhost:5000');
+const socket = io('https://quizz-app-gules-phi.vercel.app');
 
 function App() {
   const [questions, setQuestions] = useState([]);
@@ -22,7 +22,7 @@ function App() {
     // Fetch quiz questions from the backend
     const fetchQuestions = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/api/questions');
+        const { data } = await axios.get('https://quizz-app-gules-phi.vercel.app/api/questions');
         console.log("Fetched questions:", data);
         setQuestions(data);
       } catch (error) {
@@ -64,7 +64,7 @@ function App() {
     }
 
     try {
-      await axios.post('http://localhost:5000/api/users/submit', { name: userName, score: result.score });
+      await axios.post('https://quizz-app-gules-phi.vercel.app/api/users/submit', { name: userName, score: result.score });
       console.log("Score submitted successfully");
     } catch (error) {
       console.error("Error submitting score:", error);
