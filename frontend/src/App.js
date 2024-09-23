@@ -7,6 +7,8 @@ import Result from './components/Result';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './styles.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 // Create a Socket.IO connection
 const socket = io('https://quizz-app-gules-phi.vercel.app');
